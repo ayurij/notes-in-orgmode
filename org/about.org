@@ -1,0 +1,18 @@
+#+TITLE: About
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css">
+
+Welcome to my web-page. My name is Yury(transliterated as yurij, iurii, etc.).
+I’m a mathematician. I enjoy mathematical analysis that has a geometric flavour. 
+I am particularly interested in real analysis, geometric measure theory, analysis on metric spaces, metric geometry, snakeness; 
+I am interested in free software, SQL, data base theory.
+
+This page looks primitive. Forget about slick layout, just make the pages informative. 
+Layout and graphical cosmetics are of secondary importance. 
+All pages have a single column layout with width the can be regulated by width of browser window. 
+The page is generated from org-mode file, which is easy to maintain. 
+Org-mode is a reliable (readable, plain text) format.   
+
+Notes of general interest (on Information Technology, mostly) can be found here. 
+
+Contact me by: yury@inforoo.me
+

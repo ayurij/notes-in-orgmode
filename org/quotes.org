@@ -1,0 +1,62 @@
+#+TITLE: Selected Quotes and Links
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css">
+* Open Source
+
+*Программирование* - управление сложностью/Programming is a complexity management
+("The Art of Unix Programming", Eric Raymond)
+
+...the value of higher level documentation, like specification of interfaces and descriptions of architecture, can be greater than the source code itself.
+...
+Complexity and size effectively close source code for system programming projects like OSes compilers after, say, 
+100K lines of code without good higher level documentation or participation in the project from its early stages. 
+This "binarization" of source code in large system programming projects may mean that 
+there is little strategic importance to keep the source code of system programs closed after it reaches a certain level of maturity,
+with corresponding size and the level of complexity.
+...ценность документации более высокого уровня, такой, как спецификации интерфейсов и описание архитектуры, может превышать ценность самого исходного текста.
+...
+Сложность и объем фактически "закрывают" исходные тексты системных
+проектов, вроде ОС и компиляторов после превышения ими объема, скажем,
+в 100 тысяч строк, при условии, что отсутствует документация высокого
+уровня, и Вы не принимали личного участия в проекте с его ранних
+стадий. Такая "бинаризация" исходных текстов в крупных системных
+проектах может означать, что стратегическая важность сохранения
+исходных текстов закрытыми может теряться после того, как проект
+достигает некоторого уровня зрелости, а также соответствующего этой
+стадии разработки размера и уровня сложности.
+(A Second look at the Cathedral and the Bazaar by Nikolai Bezroukov)
+
+* Emacs
+*Emacs* allows you to do much more than just editing. Emacs is not a mere
+editor like others, either in terminal or in GUI. Emacs is a development
+platform. Emacs is beyond an editor. Emacs is a programming platform that has an
+editor. Don't confuse Emacs with other real editors, which can only be
+used for editing. (tuhdo.github.io)
+
+* Made by Human, Made by Heaven
+I think, there are two different types of professional work.
+The first one is based on information which was made by humans.
+We are using howto's, guides, source code, when we write a program, construct, audit etc.
+The second one is based on information which was made by heaven.
+It means, that we produce new knowledge and we need to 
+retrieve information from nature, represent and analyse it;
+and then it becomes input to the first type of work. 
+It could be research in physics, mathematics, economics 
+(which depends on social behavior and probability).    
+Of course, these are poles apart and we have a mix of them in reality,
+but with a different proportion and significance.
+
+* Reliable Links (to Nordic Summit)
+Millions of links appear every day in the Web and millions of links become broken, 
+leading to different query errors (e.g. widespread 404-error). 
+This reflects the dynamic character of the Web, but it becomes a difficulty when we wish to keep the content spread over the Web together.
+The reliability of links plays an important role in software.
+The present article is devoted to the static content. [[file:https:/frab.fscons.org/system/attachments/44/original/reliable_links.pdf?1471958172][link]]
+
+* Links
+
+- "Everything you need to start using GnuPG", Justin R. Miller [[file:files/mutt-gnupg-howto.pdf][pdf]]
+
+- "Attending an academic conference", Michael Ernst, Washington University [[file:files/conference-attendance.pdf][pdf]]
+
+- "Responding to non-native speakers of English", Sheryl Hort, University of Minnesota [[file:files/non-native.pdf][pdf]]
+ 

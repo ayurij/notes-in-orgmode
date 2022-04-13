@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Operational Systems</title>
+<!-- 2017-07-19 Wed 15:35 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="yury" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Operational Systems</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Загрузка системы</a></li>
+<li><a href="#sec-2">2. Устройство операционной системы</a></li>
+<li><a href="#sec-3">3. Разработка</a></li>
+<li><a href="#sec-4">4. Администрирование</a>
+<ul>
+<li><a href="#sec-4-1">4.1. установка ОС из командной строки</a></li>
+<li><a href="#sec-4-2">4.2. загрузка Linux через GRUB</a></li>
+<li><a href="#sec-4-3">4.3. подсистемы</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Загрузка системы</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<b>Архитектура ПК. Assembler.</b> Организация памяти. Адресация памяти. 
+Взаимодействие микропроцессора и переферийных устройств. Прерывания и порты. 
+Взаимодействие (вызов) программ на ассемблере друг с другом и с программами на других языках. 
+</p>
+<ul class="org-ul">
+<li>Юров "Assembler". В частности, гл. "Архитектура ПК", "Прерывания", "Защищенный режим", "Обработка в защищенном режиме", "Модульное программирование" 
+</li>
+</ul>
+<p>
+<b>Загрузка системы.</b> Устройство MBR. Использование готового загрузчика для запуска ОС. Разработка своего загрузчика и загрузка минимальной ОС. 
+</p>
+<ul class="org-ul">
+<li>статья "MBR для флешки"  
+</li>
+<li>статья "Как запустить программы без ОС"
+</li>
+<li>Brokenthron.com, "Operating System Development"
+</li>
+</ul>
+<p>
+прочее:  
+</p>
+<ul class="org-ul">
+<li>Таненбаум "Архитектура ПК" 
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Устройство операционной системы</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Общие задачи операционной системы и детали реализации Linux, средства синхронизации, программирование под OC.
+</p>
+<ul class="org-ul">
+<li>лекции "программирование для Linux" (Андрей Боровский, Linux Format)
+</li>
+<li>Робачевский "Операционная система UNIX"
+</li>
+</ul>
+<p>
+прочее:
+</p>
+<ul class="org-ul">
+<li>описание OC xv6  
+</li>
+<li>Роберт Лав, "Разработка ядра Linux"
+</li>
+<li>D. Rusling, "Linux Kernel"
+</li>
+<li>очень подробное описание с описанием различий в реализациях разных Unix систем: Stevens, Rago, "Advanced programming in the Unix Environment"  
+</li>
+<li>Таненбаум, "Современные Операционные Системы"  
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Разработка</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+<b>Разработка модулей</b>  
+</p>
+<ul class="org-ul">
+<li>практика по работе с ядром: Алексей Соловьев, "Разработка модулей ядра ОС Linux"
+</li>
+</ul>
+<p>
+<b>Сборка дистрибутива</b>
+</p>
+<ul class="org-ul">
+<li>Сборка системы и обзор пакетов "Linux From Scratch"
+</li>
+</ul>
+<p>
+прочее:  
+</p>
+<ul class="org-ul">
+<li>O'Reilly, "Linux Device Drivers" 
+</li>
+<li>Исходный код некоторых программ: Арнольд Роббинс, "Linux программирование в примерах". 
+</li>
+<li>Описание цикла разработки дистрибутива "Руководство начинающего разработчика Debian".   
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Администрирование</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Общее о Linux: O'Reilly, "Running Linux"
+</p>
+</div>
+<div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> установка ОС из командной строки</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Установка некоторых дистрибутивов производится из командной строки или 
+с помощью текстового интерфейса и требует установки дополнительного ПО. 
+К примеру:    
+</p>
+<ul class="org-ul">
+<li>установка базового Arch Linux. Также X Windows, Window Manager
+</li>
+<li>установка базового Debian. Также видео-драйвера, X Windows, Window Manager     
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> загрузка Linux через GRUB</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+Система Linux имеет несколько уровней загрузки и может загружаться с
+разными ядрами. Разные варианты загрузки:
+</p>
+<ul class="org-ul">
+<li>загрузчик GRUB имеет свой консольный режим 
+</li>
+<li>загрузка в консоль
+</li>
+<li>однопользовательский режим
+</li>
+<li>хак-загрузка с передачей параметра процессу init
+</li>
+<li>загрузка в другие разделы 
+</li>
+<li>загрузка/установка различных ядер
+</li>
+</ul>
+<p>
+Способы восстановления:
+</p>
+<ul class="org-ul">
+<li>восстановление через консоль и chroot
+</li>
+<li>использование логов для восстановления после сбоя обновления. 
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> подсистемы</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>система репозиториев, apt-get; apt-mirror
+</li>
+<li>система инициализации, задания, автозагрузка 
+</li>
+<li>X-сервер, перенаправления
+</li>
+<li>хранение паролей
+</li>
+<li>права доступа; SELinux/AppArmor 
+</li>
+<li>работа с сетью из командной строки; iptables
+</li>
+<li>системы виртуализации Xen, Qemu/KVM
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: yury</p>
+<p class="date">Created: 2017-07-19 Wed 15:35</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

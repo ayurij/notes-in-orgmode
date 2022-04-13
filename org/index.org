@@ -1,0 +1,9 @@
+#+TITLE: yury, inforoo me! 
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css">
+
++ [[file:about.html][About]]
++ [[file:quotes.html][Selected Quotes and Links/Цитаты и ссылки]]
++ [[file:keyboard_story.html][Игра на клавиатуре]]
++ [[file:operational_systems.html][Курс "Операционные Системы". Содержание]]
++ Collection of Misunderstandings
++ [[file:selected_notes.html][Заметки: разное]]

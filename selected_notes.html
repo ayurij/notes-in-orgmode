@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Заметки</title>
+<!-- 2017-07-21 Fri 07:42 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="yury" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Заметки</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Аксиоматика</a></li>
+<li><a href="#sec-2">2. Наименование</a>
+<ul>
+<li><a href="#sec-2-1">2.1. Трудности перевода</a></li>
+<li><a href="#sec-2-2">2.2. Аббревиатура</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3. Описание путей</a>
+<ul>
+<li><a href="#sec-3-1">3.1. Особенности обратной совместимости</a></li>
+<li><a href="#sec-3-2">3.2. Особенности сложных систем: недодобранная функциональность</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4. Экранирование</a></li>
+<li><a href="#sec-5">5. Синтаксис **</a></li>
+<li><a href="#sec-6">6. Синтаксис psql: наблюдения</a>
+<ul>
+<li><a href="#sec-6-1">6.1. Возможности psql, определившие ее синтаксис:</a></li>
+<li><a href="#sec-6-2">6.2. Общие ограничения(правила) накладываемые на синтаксис:</a></li>
+<li><a href="#sec-6-3">6.3. Пояснения</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Аксиоматика</h2>
+<div class="outline-text-2" id="text-1">
+<ol class="org-ol">
+<li>Природа неисчерпаема вглубь, а в памяти мы можем посмотреть всё до байта
+</li>
+<li>Информация доступна на разных уровнях детализации, однако целое больше суммы частей                                                                               
+</li>
+<li>Open source позволяет найти положение нужных структур в памяти или storage (если есть к ним доступ)                                                                                            
+</li>
+<li>Хорошо комментированный open source позволяет понять, что он делает   
+</li>
+</ol>
+
+<p>
+Мы можем посмотреть структуру до байта (1) если open source (3), а также 
+на других, более высоких, уровнях - к примеру не в байтах, а в табличном представлении (2).  
+</p>
+
+<p>
+Покажите мне код, не показывая структур данных, и я останусь в заблуждении.
+Покажите мне ваши структуры данных, и код, скорее всего, не понадобится: он будет очевиден.
+(Эрик Раймонд; Фредерик Брукс сначала говорил это про
+блок-схемы, таблицы, потом Раймонд переформулировал.)
+"в заблуждении" - наверно, грехи перевода.
+В отношении больших проектов (о которых фрагмент выше), можно сказать тоже,
+только вместо (код, структуры данных) -&gt; (структуры данных, документация)  
+</p>
+
+<p>
+В базах данных есть механизмы повышения надежности (как в авиации): данные сразу не удаляются и т.п. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Наименование</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Трудности перевода</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>Удаленный файл, файл на удаленной системе, удаленная ветка - delete/remote. отдаленный файл
+</li>
+<li>Разрешенный конфликт, разрешенная запись - allowed/solved. устраненный конфликт
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Аббревиатура</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Для лучшего запоминания названий, надо понимать их расшифровку:
+</p>
+<ul class="org-ul">
+<li>dpkg - debian package
+</li>
+<li><code>pg_hba</code> - hosted-based access
+</li>
+<li>/etc - et cetera 
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Описание путей</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Для доступа к объектам файловой системы используются пути.
+Также тут можно упомянуть сопутствующие понятия из JNDI:
+Naming Systems, Namespaces, Composite Names.
+Пути в файловой системе (в операционной системе), имеют определенный формат.
+(В Windows - используются составные, Composite Name; т.к. &lt;диск&gt;:\\&lt;сам путь&gt;\&lt;файл с расширением&gt;
+В Unix используется одна Naming System.)
+Вообще, файловая система - это иерархическая база данных. 
+С точки зрения XPath: путь к файл/директории - это частный случай запроса,
+где используется одна child ось.
+Общие обозначения: ./ ../ ~/ 
+В каждой системе возникают свои детали реализации.
+К примеру ../ в корневом каталоге ссылается туда же что и ./
+В системах есть некоторые ограничения и особенности.
+</p>
+</div>
+
+<div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Особенности обратной совместимости</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+Они возникают либо из-за условий на обратную совместимость, 
+либо отражают процесс разработки и складываются исторически.
+Примеры. 
+В Windows-based системах нельзя использовать имя директории CON и много других
+из-за обратной совместимости с DOS-овскими именами устройств.
+В GNU/Linux системе можно осуществить переход в директорию "//", 
+которой не существует, но оставлена для будущей совместимости.
+При том, при использовании zsh зайти в директорию "//" уже нельзя.    
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Особенности сложных систем: недодобранная функциональность</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+Когда верхняя надстройка не использует возможности нижней, хотя у нее есть все возможности:
+</p>
+<ul class="org-ul">
+<li>zsh: ../ не работает, когда верхний каталог был в процессе переименован; в bash - работает
+</li>
+<li>sudo <i>dir/subdir</i>&#x2026; автоподстановка не работает, если у текущего пользователя нет прав просмотра subdir, a она принадлежит не root, даже в случае, когда sudo-пароль был введен и действует. 
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Экранирование</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Имена директорий и файлов, к примеру в Linux, могут содержать даже непечатные 
+символы. Как файловые менеджеры, так и мы сами вводим дополнительные ограничения.
+Файловый менеджер не даст ввести в имя непечатный символ.
+А если не допускать пробельные символы в именах, не надо бутет их экранировать
+при вводе в командной строке.
+Однако, надо предусмотреть и другой вариант.
+Предоставляя возможность командной оболочке вызывать файловые объекты по именам
+(то есть по текстовому представлению ссылки на объект), нужно определить механизм экранирования.
+Экранирование - это не видимый, но существенный механизм для контроля корректности и расширения
+возможностей программной среды.  
+Экранирование - механизм интеграции текстов различного происхождения 
+в текущую среду. 
+Под различным происхождением подразумевается не только различие в качестве, но и в источнике происхождения.
+Таким образом, под категорию таких текстов не попадают комментарии, в частности, комментарии для системы документирования, 
+директивы препроцессора и подобные вещи, так как они больше расчитаны на внутреннюю обработку. 
+Правила экранирования определяются индивидуально для сред, языков программирования и разметки.
+Таких примеров множество. 
+Одним из необычных примеров является символ "!"
+позволяющий выполнять команды из командного интерпретатора(точнее, получать вывод этих команд) в другой среде.
+Такой способ используется в Vim, Psql, IPython, Git  
+При вызове команды в командной строке подряд два дефиса отменяют интерпретацию последующих дефисов как знаков ключей. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Синтаксис **</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Синтаксис для рекурсивного включения объектов json в Postgres.
+Вообще, нормальная математическая идиома: повторение знака опрации. (стрелочная нотация Кнута, к примеру) 
+На практике 
+</p>
+<ul class="org-ul">
+<li>традиционно, вместо возведения в степень
+</li>
+</ul>
+<p>
+используется для рекурсивного поиска в деревьях:
+</p>
+<ul class="org-ul">
+<li>rdiff-backup
+</li>
+<li>fish shell 
+</li>
+<li>git
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Синтаксис psql: наблюдения</h2>
+<div class="outline-text-2" id="text-6">
+</div><div id="outline-container-sec-6-1" class="outline-3">
+<h3 id="sec-6-1"><span class="section-number-3">6.1</span> Возможности psql, определившие ее синтаксис:</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>в командной строке psql можно вводить и SQL запросы и psql-команды
+</li>
+<li>можно задавать несколько psql-команд за один ввод 
+</li>
+<li>есть команды, принимающие пути файлов в качестве аргументов
+</li>
+<li>возможно определять переменные, то есть присутствуют элементы ESQL
+</li>
+<li>можно вызывать команды командного интерпретатора (связь с внешним миром)
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-6-2" class="outline-3">
+<h3 id="sec-6-2"><span class="section-number-3">6.2</span> Общие ограничения(правила) накладываемые на синтаксис:</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li>синтаксический разбор должен быть простым по возможности
+</li>
+<li>не усложнять структуру команд, не создавать лишние ключи для команд
+</li>
+<li>согласовываться с общепринятыми стандартами в соответствующих контекстах 
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-6-3" class="outline-3">
+<h3 id="sec-6-3"><span class="section-number-3">6.3</span> Пояснения</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+Строка ввода может содержать несколько psql-команд, файловые пути и непосредственно SQL.
+Поэтому, желательно, чтобы psql-команды не смешивались с другими элементами,
+то есть для маркера psql-команды нужно выбрать наименее используемый символ.    
+Соответственно, был выбран обратный слеш '\'.
+</p>
+
+<p>
+В Psql можно работать с переменными, при этом используется символ двоеточия ':'.
+Это согласуется со стандартами Embedded SQL.
+</p>
+
+<p>
+Для вызова команд командной оболочки sh, используется префикс '\! '.
+Восклицательный знак - стандартная команда для вызова команды оболочки из vim, IPython. 
+</p>
+
+<p>
+Тем не менее, функция cd указывается без префикса, то есть как '\cd'.
+Действительно, это можно объяснить тем, что в данном случае cd является по смыслу внутренней комадой,
+не влияющей на внешнее окружение. Если мы создадим файл '\! touch filename', то он действительно будет
+создан в текущей директории '\! pwd', и останется после выхода '\q' из psql.
+Однако, если мы перейдем в другую директорию '\cd ./subdir', то после выхода из psql новое значение рабочей директории не 
+будет передано процессу командного интерпретатора, то есть мы вернемся в ту директорию, в которой были до вызова psql.  
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: yury</p>
+<p class="date">Created: 2017-07-21 Fri 07:42</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
